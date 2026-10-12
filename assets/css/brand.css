@@ -1,0 +1,157 @@
+/* QISNet 2027 brand layer — monochrome identity on the TheEvent/RelSciFM base theme.
+   Google Sans is self-hosted under the OFL (see ../fonts/GoogleSans-OFL.txt). */
+@font-face {
+  font-family: "Google Sans";
+  src: url("../fonts/google-sans-latin.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+:root {
+  --default-font: "Google Sans", Arial, sans-serif;
+  --heading-font: "Google Sans", Arial, sans-serif;
+  --nav-font: "Google Sans", Arial, sans-serif;
+}
+
+.header {
+  height: 76px;
+  background: rgba(5, 13, 20, 0.58);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+.header > div { gap: 18px; justify-content: space-between; }
+.brand-home { flex: 0 0 154px; line-height: 0; }
+.brand-home img { display: block; width: 154px; height: auto; }
+.brand-home img, .hero-brand { filter: invert(1); }
+.brand-home:focus-visible { outline: 2px solid #fff; outline-offset: 4px; }
+.header .cta-btn { margin-left: 0; white-space: nowrap; }
+
+.hero { background: #000; padding-top: 76px; }
+.hero::after { display: none; }
+.hero img.hero-bg[data-aos] { opacity: 1 !important; }
+.hero:before {
+  /* Keep the Rome photograph visible, with stronger shade behind the copy. */
+  background:
+    linear-gradient(90deg, rgba(3, 12, 20, 0.22) 0%, rgba(3, 12, 20, 0) 72%),
+    linear-gradient(180deg, rgba(3, 12, 20, 0.54) 0%, rgba(3, 12, 20, 0.5) 52%, rgba(3, 12, 20, 0.78) 100%);
+  pointer-events: none;
+}
+.hero .hero-copy { text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35); }
+.hero .about-info:before {
+  background: linear-gradient(180deg, rgba(3, 12, 20, 0.38), rgba(3, 12, 20, 0.58));
+}
+.hero .about-info p { color: #eceef2; }
+.hero .about-info h3 { color: #c4e2ff; }
+.hero .hero-brand-layout {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  align-items: center;
+  gap: clamp(32px, 5vw, 80px);
+  padding-top: 48px;
+  padding-bottom: 36px;
+}
+.hero-brand { display: block; width: 100%; max-width: 390px; height: auto; justify-self: center; }
+.hero .hero-copy h2 { font-size: clamp(34px, 3.7vw, 52px); }
+.hero .hero-copy h2 span { background: none; -webkit-text-fill-color: currentColor; color: #fff; }
+.hero .hero-badge { color: #fff; background: rgba(3, 12, 20, 0.28); border-color: rgba(255, 255, 255, 0.4); }
+.hero .hero-copy .hero-subtitle { color: #f0f0f2; }
+
+@media (min-width: 1200px) {
+  .header .navmenu { order: 0; }
+  .navmenu > ul > li { padding-left: 7px; padding-right: 7px; }
+  .navmenu a { font-size: 12px; }
+}
+@media (max-width: 1199px) {
+  .header .cta-btn { margin-left: auto; order: 2; }
+  .brand-home { order: 1; }
+}
+@media (max-width: 767px) {
+  .header { height: 68px; }
+  .header > div { gap: 12px; }
+  .brand-home { flex-basis: 144px; }
+  .brand-home img { width: 144px; }
+  .header .cta-btn { padding: 7px 12px; }
+  .hero { padding-top: 68px; }
+  .hero:before {
+    background: linear-gradient(180deg, rgba(3, 12, 20, 0.56) 0%, rgba(3, 12, 20, 0.58) 45%, rgba(3, 12, 20, 0.8) 100%);
+  }
+  .hero .hero-brand-layout { grid-template-columns: 1fr; gap: 30px; padding-top: 30px; text-align: center; }
+  .hero-brand { grid-row: 1; width: min(68vw, 280px); }
+  .hero .hero-copy h2 { font-size: clamp(30px, 7.6vw, 42px); }
+  .hero .hero-badge { display: none; }
+}
+
+
+/* ---------- QISNet additions ---------- */
+
+/* Hero buttons */
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+.hero-actions .btn { border-radius: 980px; padding: 10px 22px; font-weight: 600; letter-spacing: -0.01em; }
+.hero-actions .btn-primary { background: var(--accent-color); border-color: var(--accent-color); color: #fff; }
+.hero-actions .btn-primary:hover { background: #147ce5; border-color: #147ce5; }
+.hero-actions .btn-outline-light { border-color: rgba(255, 255, 255, 0.55); color: #fff; }
+.hero-actions .btn-outline-light:hover { background: rgba(255, 255, 255, 0.12); border-color: #fff; color: #fff; }
+.hero .hero-subtitle { max-width: 640px; }
+@media (max-width: 767px) {
+  .hero-actions { justify-content: center; }
+  .hero .hero-subtitle { margin-left: auto; margin-right: auto; }
+}
+
+/* Overview scope paragraphs */
+.overview .overview-scope { max-width: 900px; margin: 0 auto 40px auto; }
+.overview .overview-scope p { color: rgba(245, 245, 247, 0.78); font-size: 16px; line-height: 1.7; margin-bottom: 16px; }
+.overview .topics-intro { color: var(--text-secondary); margin: -16px 0 8px 0; }
+
+/* CFP action buttons */
+.cfp .cfp-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-bottom: 48px; }
+.cfp .cfp-actions .btn { border-radius: 980px; font-weight: 600; letter-spacing: -0.01em; }
+.cfp .cfp-actions .btn i { margin-right: 6px; }
+.cfp .cfp-actions .btn-primary { background: var(--accent-color); border-color: var(--accent-color); }
+.cfp .cfp-actions .btn-primary:hover { background: #147ce5; border-color: #147ce5; }
+.cfp .cfp-actions .btn-outline-light.disabled { opacity: 0.55; border-color: rgba(255, 255, 255, 0.35); color: rgba(245, 245, 247, 0.85); cursor: not-allowed; }
+.cfp .container .dates-note { color: var(--text-secondary); font-size: 14px; margin-top: 18px; }
+
+/* "To be announced" cards used by Sponsors / Awards / Speakers / Schedule */
+.tba-card {
+  text-align: center;
+  padding: 44px 32px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px dashed rgba(255, 255, 255, 0.18);
+}
+.tba-card i { font-size: 34px; color: var(--accent-color); display: block; margin-bottom: 14px; }
+.tba-card h3 { font-size: 20px; font-weight: 600; color: #f5f5f7; letter-spacing: -0.02em; margin: 0 0 10px 0; }
+.cfp .tba-card h3 { margin-top: 0; }
+.tba-card p { color: rgba(245, 245, 247, 0.72); font-size: 15px; line-height: 1.7; margin: 0; max-width: 620px; margin-left: auto; margin-right: auto; }
+.tba-card a { color: var(--accent-color); }
+.tba-card a:hover { text-decoration: underline; }
+
+/* Organizers: sub-group titles, e-mail link, contact block */
+.speakers .group-title {
+  font-size: 22px; font-weight: 600; color: #f5f5f7; letter-spacing: -0.02em;
+  text-align: center; margin: 8px 0 28px 0;
+}
+.speakers .row + .group-title { margin-top: 56px; }
+.speakers .group-title small { font-size: 14px; font-weight: 500; color: var(--text-secondary); margin-left: 6px; }
+.speakers .member .member-mail { display: inline-block; margin-top: 8px; font-size: 13px; color: var(--text-secondary); }
+.speakers .member .member-mail:hover { color: var(--accent-color); }
+.speakers .contact-block { max-width: 720px; margin: 64px auto 0 auto; text-align: center; }
+.speakers .contact-block .group-title { margin-bottom: 12px; }
+.speakers .contact-block p { color: rgba(245, 245, 247, 0.72); font-size: 15px; line-height: 1.7; }
+.speakers .contact-block a { color: var(--accent-color); }
+
+/* Footer credit lines */
+.footer .credits { font-size: 13px; margin-top: 4px; }
+
+/* Mobile nav fix: a backdrop-filter on the fixed header makes it the containing block for the
+   fixed-position menu overlay, collapsing the menu to the header's height. Drop it while open. */
+@media (max-width: 1199px) {
+  .mobile-nav-active .header { -webkit-backdrop-filter: none; backdrop-filter: none; background: transparent; }
+}
+
+/* Equal-height member cards within a row */
+.speakers .member { height: 100%; }
+
+/* Scope paragraphs align with the Topics column */
+.overview .overview-scope { max-width: 960px; margin-left: 0; }

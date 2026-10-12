@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><title>QISNet</title>
+<line x1="256.0" y1="217.7" x2="256.0" y2="120.3" stroke="#000" stroke-width="13.3" stroke-linecap="round"/>
+<line x1="289.2" y1="236.8" x2="371.0" y2="189.6" stroke="#000" stroke-width="13.3" stroke-linecap="round"/>
+<line x1="289.2" y1="275.2" x2="373.5" y2="323.9" stroke="#000" stroke-width="13.3" stroke-linecap="round"/>
+<line x1="256.0" y1="294.4" x2="256.0" y2="388.8" stroke="#000" stroke-width="13.3" stroke-linecap="round"/>
+<line x1="222.8" y1="275.2" x2="138.5" y2="323.9" stroke="#000" stroke-width="13.3" stroke-linecap="round"/>
+<line x1="222.8" y1="236.8" x2="141.0" y2="189.6" stroke="#000" stroke-width="13.3" stroke-linecap="round"/>
+<line x1="281.5" y1="105.5" x2="371.0" y2="157.2" stroke="#000" stroke-width="13.3" stroke-linecap="round"/>
+<line x1="399.1" y1="205.9" x2="399.1" y2="309.1" stroke="#000" stroke-width="13.3" stroke-linecap="round"/>
+<line x1="373.5" y1="353.4" x2="284.1" y2="405.0" stroke="#000" stroke-width="13.3" stroke-linecap="round"/>
+<line x1="227.9" y1="405.0" x2="138.5" y2="353.4" stroke="#000" stroke-width="13.3" stroke-linecap="round"/>
+<line x1="112.9" y1="309.1" x2="112.9" y2="205.8" stroke="#000" stroke-width="13.3" stroke-linecap="round"/>
+<line x1="141.0" y1="157.2" x2="230.5" y2="105.5" stroke="#000" stroke-width="13.3" stroke-linecap="round"/>
+<circle cx="256.0" cy="90.8" r="29.5" fill="none" stroke="#000" stroke-width="13.3"/>
+<polygon points="399.1,140.9 431.5,173.4 399.1,205.9 366.6,173.4" fill="none" stroke="#000" stroke-width="13.3" stroke-linejoin="round"/>
+<circle cx="399.1" cy="338.6" r="29.5" fill="none" stroke="#000" stroke-width="13.3"/>
+<polygon points="256.0,388.8 288.4,421.2 256.0,453.7 223.6,421.2" fill="none" stroke="#000" stroke-width="13.3" stroke-linejoin="round"/>
+<circle cx="112.9" cy="338.6" r="29.5" fill="none" stroke="#000" stroke-width="13.3"/>
+<polygon points="112.9,140.9 145.4,173.4 112.9,205.8 80.5,173.4" fill="none" stroke="#000" stroke-width="13.3" stroke-linejoin="round"/>
+<circle cx="256.0" cy="256.0" r="38.4" fill="none" stroke="#000" stroke-width="13.3"/>
+<circle cx="256.0" cy="256.0" r="14.8" fill="#000"/>
+<ellipse cx="256.0" cy="256.0" rx="233.1" ry="85.6" fill="none" stroke="#000" stroke-width="13.3" transform="rotate(-32 256.0 256.0)"/>
+<circle cx="453.6" cy="132.5" r="19.2" fill="#000"/>
+<circle cx="58.4" cy="379.5" r="19.2" fill="#000"/>
+</svg>

@@ -4,7 +4,7 @@ Homepage of the **1st International Workshop on Quantum Intelligence, Security, 
 held in conjunction with the 36th International Conference on Computer Communications and Networks (ICCCN 2027), Rome, Italy.
 
 The site is a static, single-page site (Bootstrap 5 "TheEvent" theme, adapted from the RelSciFM @ KDD 2026 layout).
-No build step is required.
+No build step is required. 
 
 ## Deploy on GitHub Pages
 
